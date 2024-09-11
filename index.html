@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="container-fluid bg-primary text-white p-3">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>Email Client</h1>
+            </div>
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-12 col-md-3 bg-light p-3">
+                <ul class="list-group">
+                    <li class="list-group-item active">Inbox</li>
+                    <li class="list-group-item">Sent</li>
+                    <li class="list-group-item">Drafts</li>
+                </ul>
+            </nav>
+            <main class="col-12 col-md-9 p-3">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <ul class="list-group">
+                            <li class="list-group-item active">Email 1</li>
+                            <li class="list-group-item">Email 2</li>
+                            <li class="list-group-item">Email 3</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="email-content">
+                            <h2>Subject of the selected email</h2>
+                            <p>Content of the selected email...</p>
+                            <button class="btn btn-primary">Reply</button>
+                            <button class="btn btn-secondary">Compose</button>
+                            <textarea class="form-control mt-3" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
