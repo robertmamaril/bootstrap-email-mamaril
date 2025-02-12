@@ -1,0 +1,199 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2e8ee; /* Light gray background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 20px 15px; /* Add padding for spacing */
+    text-align: center; /* Center the header text */
+}
+
+header h1 {
+    font-size: 2rem; /* Adjust the size of the title */
+    margin: 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #e1e4e7; /* Light gray background */
+    padding: 20px;
+    text-align: center;
+    color: #6c757d; /* Muted text color for footer */
+    font-size: 0.875rem; /* Smaller text size */
+}
+
+/* Sidebar (Folders and Compose) */
+.col-md-3 {
+    background-color: rgb(209, 208, 208);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+    padding-top: 20px; /* Space out the items from the top */
+}
+
+.col-md-3 .btn {
+    background-color: #28a745; /* Green background for compose button */
+    border-color: #28a745;
+    color: white;
+}
+
+.col-md-3 .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.col-md-3 input.form-control {
+    border-radius: 20px; /* Rounded corners for the search input */
+}
+
+.list-group-item {
+    border: none; /* Remove border */
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list-group-item.active {
+    background-color: #54a1f3; /* Blue color for active folder */
+    color: white;
+    font-weight: bold;
+}
+
+/* Message List Styling */
+.list-group-item h5 {
+    margin: 0;
+    font-size: 1rem; /* Adjust font size for the subject */
+}
+
+.list-group-item p {
+    font-size: 0.875rem; /* Slightly smaller text for the email preview */
+    color: #6c757d; /* Muted text color for email preview */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+}
+
+.list-group-item:hover h5 {
+    color: #1180f7; /* Blue text on hover */
+}
+
+/* Selected Message Styling */
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the message card */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger text for message subject */
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057; /* Darker gray for message content */
+}
+
+.btn-reply {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-reply:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-send {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+
+/* Email Compose Styling */
+textarea {
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow inside textarea */
+    resize: vertical;
+    width: 100%;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Styling for the attachment icon */
+.attachment-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff; /* Blue color to match the theme */
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem; /* Adjust font size */
+}
+
+.attachment-link i {
+    margin-right: 8px; /* Space between the icon and text */
+}
+
+.attachment-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.attachment-link:active {
+    color: #003366; /* Even darker blue when clicked */
+}
+
+/* Custom Responsive Styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Slightly smaller title on mobile */
+    }
+
+    .list-group-item h5 {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    .col-md-3 {
+        padding: 10px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.25rem; /* Smaller title for very small screens */
+    }
+
+    .col-md-3, .col-md-9 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .list-group-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+}
